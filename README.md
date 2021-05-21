@@ -50,21 +50,21 @@ $ make -j
 Examples:
 
 ```bash
-$ ./pandaPIParser/pandaPIParser ipc2020-domains/total-order/Transport/domain.hddl ipc2020-domains/total-order/Transport/pfile01.hddl transport.htn 
-$ ./pandaPIgrounder/pandaPIgrounder transport.htn transport.sas
-$ ./build/pandaPIengine transport.sas 
+$ ./pandaPIParser/pandaPIParser ipc2020-domains/total-order/Transport/domain.hddl ipc2020-domains/total-order/Transport/pfile01.hddl transport.parsed 
+$ ./pandaPIgrounder/pandaPIgrounder transport.parsed transport.sas
+$ ./build/pandaPIengine transport.sas > transport.solution
 ```
 
 ```bash
-$ ./pandaPIParser/pandaPIParser domains/total-order/UM-Translog/domain.hddl domains/total-order/UM-Translog/14-A-RegularTruck-2Regions.hddl um-translog.htn 
-$ ./pandaPIgrounder/pandaPIgrounder um-translog.htn um-translog.sas
-$ ./build/pandaPIengine um-translog.sas 
+$ ./pandaPIParser/pandaPIParser domains/total-order/UM-Translog/domain.hddl domains/total-order/UM-Translog/14-A-RegularTruck-2Regions.hddl um-translog.parsed 
+$ ./pandaPIgrounder/pandaPIgrounder um-translog.parsed um-translog.sas
+$ ./build/pandaPIengine um-translog.sas > um-translog.solution
 ```
 
 ```bash
-$ ./pandaPIParser/pandaPIParser ipc2020-domains/total-order/Towers/domain.hddl ipc2020-domains/total-order/Towers/pfile_01.hddl towers.htn 
-$ ./pandaPIgrounder/pandaPIgrounder towers.htn towers.sas
-$ ./build/pandaPIengine towers.sas 
+$ ./pandaPIParser/pandaPIParser ipc2020-domains/total-order/Towers/domain.hddl ipc2020-domains/total-order/Towers/pfile_01.hddl towers.parsed 
+$ ./pandaPIgrounder/pandaPIgrounder towers.parsed towers.sas
+$ ./build/pandaPIengine towers.sas > um-translog.solution
 ```
 
 ## Reunião 21/05
