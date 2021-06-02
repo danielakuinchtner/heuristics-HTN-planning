@@ -110,17 +110,12 @@ $ ./pandaPIgrounder/pandaPIgrounder woodworking.parsed woodworking.sas
 $ ./build/pandaPIengine woodworking.sas > woodworking.solution
 ```
 
-
+Using LM-Cut heuristic:
 ```bash
-$ ./pandaPIParser/pandaPIParser ipc2020-domains/total-order/rpg/rpg.hddl ipc2020-domains/total-order/rpg/example.hddl rpg.parsed
-
-$ ./pandaPIgrounder/pandaPIgrounder rpg.parsed rpg.sas
-
-$ ./build/pandaPIengine rpg.sas > rpg.solution
+$ ./build/pandaPIengine --heuristic "rc2(lmc)"  um-translog.sas > um-translog.solution
 ```
 
-Using LM-Cut heuristic:
-./build/pandaPIengine --heuristic "rc2(lmc)"  um-translog.sas > um-translog.solution
+
 
 
 
