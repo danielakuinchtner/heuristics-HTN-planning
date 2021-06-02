@@ -1,5 +1,8 @@
 # heuristics-HTN-planning
 
+## Files structure
+
+<img src="panda.PNG" width="500">
 
 ## Requirements
 
